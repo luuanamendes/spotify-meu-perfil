@@ -35,7 +35,7 @@ html ::-webkit-scrollbar-track {
     background: var(--color-dark-800);
 }
 
-html ::-webkit-scrollbar-corner{
+html ::-webkit-scrollbar-corner {
     background-color: var(--color-dark-800);
 }
 
@@ -263,33 +263,131 @@ main {
 }
 
 @media screen and (max-width: 500px) {
-    .search-box {
-        width: 350px;
+    body {
+        background: linear-gradient(180deg, #CEBF98 10%, #121212 25%);
     }
 
-    .search-box input {
-        width: 150px;
+    header {
+        gap: 20px;
+        padding: 40px 30px;
     }
 
-    .keyboard-icon {
+    header img {
+        width: 120px;
+        height: 120px;
+    }
+
+    header div:last-child {
+        padding-top: 0px;
+        gap: 0px;
+    }
+
+    header p:first-child {
         visibility: hidden;
     }
 
-    #line {
-        display: flex;
+    header p {
+        padding-top: 12px;
+        font-size: 12px;
+    }
+
+    header h1 a {
+        font-size: 30px;
+    }
+
+    main {
+        padding: 30px;
+    }
+
+    .part1 .options-icon {
+        width: 20px;
+        cursor: pointer;
+    }
+
+    .titulo {
+        margin-top: 20px;
+        font-size: 12px;
+    }
+
+    .titulo .btn-sa {
+        visibility: hidden;
+    }
+
+    .box-artista{
         flex-direction: column;
-        align-items: center;
-        gap: 20px;
     }
 
-    #line:last-child {
-        height: fit-content;
-    }
-
-    #line #left {
+    .box-artista .artista{
         display: flex;
-        justify-content: center;
-        gap: 30px;
+        align-items: center;
     }
 
+    .box-artista .artista img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .box-artista .artista h3 {
+        font-size: 14px;
+    }
+
+    .box-artista .artista p {
+        font-size: 12px;
+        margin-left: 14px;
+        margin-top: 8px;
+        margin-bottom: 0px;
+    }
+
+    .nome-musica p {
+       font-size: 14px;
+    }
+
+    .nome-musica p:last-child {
+        font-size: 12px;
+    }
+
+    .musica .nome-musica {
+        width: 90%;
+    }
+
+    .musica .nome-album {
+        width: 0%;
+    }
+
+    .musica .nome-album p{
+        font-size: 0px;
+    }
+
+    .musica .time p{
+        font-size: 0px;
+    }
+
+    .musica .like {
+        margin-right: 0px;
+    }
+
+    .nome-album p,
+    .time p,
+    .like i {
+        visibility: hidden;
+    }
+
+    .box-playlists {
+        flex-direction: column;
+    }
+
+    .box-playlists .playlist {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .box-playlists .playlist img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .box-playlists .playlist h3 {
+        margin-bottom: 0px;
+    }
 }

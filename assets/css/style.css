@@ -313,11 +313,11 @@ main {
         visibility: hidden;
     }
 
-    .box-artista{
+    .box-artista {
         flex-direction: column;
     }
 
-    .box-artista .artista{
+    .box-artista .artista {
         display: flex;
         align-items: center;
     }
@@ -339,7 +339,7 @@ main {
     }
 
     .nome-musica p {
-       font-size: 14px;
+        font-size: 14px;
     }
 
     .nome-musica p:last-child {
@@ -354,11 +354,11 @@ main {
         width: 0%;
     }
 
-    .musica .nome-album p{
+    .musica .nome-album p {
         font-size: 0px;
     }
 
-    .musica .time p{
+    .musica .time p {
         font-size: 0px;
     }
 

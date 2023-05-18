@@ -19,6 +19,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
 }
 
 html ::-webkit-scrollbar {
@@ -140,6 +141,11 @@ main {
     cursor: pointer;
 }
 
+.box-artista .artista a {
+    display: flex;
+    flex-direction: column;
+}
+
 .box-artista .artista:hover {
     transition: .3s;
     background-color: var(--color-gray-500);
@@ -174,12 +180,18 @@ main {
 }
 
 .box-musicas .musica {
-    background-color: transparent;
+    border: none;
     border-radius: 6px;
+    background-color: transparent;
+    cursor: pointer;
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 20px;
     padding: 10px 24px;
+}
+
+.tocando.musica {
+    background: rgba(30, 215, 96, 0.1);
 }
 
 .box-musicas .musica:hover {
@@ -199,6 +211,7 @@ main {
 .nome-musica p {
     color: var(--color-ligth-50);
     font-weight: bold;
+    text-align: left;
 }
 
 .nome-album p,
@@ -206,6 +219,7 @@ main {
 .nome-musica p:last-child {
     font-size: 14px;
     color: var(--color-ligth-100);
+    text-align: left;
 }
 
 .musica .foto {
@@ -237,6 +251,11 @@ main {
     cursor: pointer;
 }
 
+.box-playlists .playlist a {
+    display: flex;
+    flex-direction: column;
+}
+
 .box-playlists .playlist:hover {
     transition: .3s;
     background-color: var(--color-gray-500);
@@ -256,13 +275,17 @@ main {
     margin-bottom: 60px;
 }
 
+.box-playlists .playlist h3:hover {
+    text-decoration: underline;
+}
+
 .line hr {
     width: 98%;
     margin: 30px 1% 100px;
     border-color: var(--color-gray-600);
 }
 
-@media screen and (max-width: 500px) {
+@media (max-width: 1200px) {
     body {
         background: linear-gradient(180deg, #CEBF98 10%, #121212 25%);
     }
@@ -322,6 +345,12 @@ main {
         align-items: center;
     }
 
+    .box-artista .artista a {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
     .box-artista .artista img {
         width: 50px;
         height: 50px;
@@ -329,6 +358,10 @@ main {
 
     .box-artista .artista h3 {
         font-size: 14px;
+    }
+
+    .box-artista .artista h3:hover {
+        text-decoration: underline;
     }
 
     .box-artista .artista p {
@@ -380,6 +413,12 @@ main {
         display: flex;
         align-items: center;
         flex-direction: row;
+    }
+
+    .box-playlists .playlist a {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
     }
 
     .box-playlists .playlist img {
